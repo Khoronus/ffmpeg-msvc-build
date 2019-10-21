@@ -13,5 +13,6 @@ if "%TOOLSET%" == "v140" (
 )
 if "%TOOLSET%" == "v141" call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvarsall.bat" %PLATFORM% -vcvars_ver=14.1
 rem run main build script
+set_env.bat
 C:\msys64\usr\bin\bash -lc "$APPVEYOR_BUILD_FOLDER/build.sh"
 @echo off
